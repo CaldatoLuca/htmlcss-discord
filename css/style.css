@@ -1,0 +1,241 @@
+/* 
+---------
+!RESET
+---------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+---------
+!DEBUG
+---------
+*/
+/* 
+-------
+?HEADER-DEBUG
+-------
+ */
+.debug .header-top {
+  background-color: #add8e6;
+  height: 5.3125rem;
+}
+.debug nav {
+  height: 3.125rem;
+}
+.debug .logo,
+.debug .link,
+.debug .login {
+  background-color: #daa520;
+  border: 2px black dotted;
+}
+.debug .header-bottom {
+  height: 32.5rem;
+  background-color: #00008b;
+}
+.debug .pink {
+  background-color: #ee82ee;
+  height: 25.9375rem;
+  border: 2px black dotted;
+}
+/* 
+-------
+?MAIN-DEBUG
+-------
+*/
+.debug section {
+  height: 39.6875rem;
+}
+.debug .big-section {
+  height: 65rem;
+}
+.debug .grey {
+  background-color: #d3d3d3;
+}
+.debug .block {
+  height: 32.5rem;
+}
+.debug .blue {
+  background-color: #1e90ff;
+
+  border: 2px black dotted;
+}
+.debug .light-pink {
+  background-color: #ffc0cb;
+
+  border: 2px black dotted;
+}
+.debug .big-block {
+  height: 58.75rem;
+}
+.debug .green {
+  background-color: #228b22;
+  border: 2px black dotted;
+}
+/* 
+-------
+?FOOTER-DEBUG
+-------
+*/
+.debug .footer-top {
+  background-color: #23272a;
+  height: 41.25rem;
+}
+.debug .footer-bottom {
+  background-color: #23272a;
+  height: 7.1875rem;
+}
+.debug .fblock1 {
+  height: 37.5rem;
+}
+.debug .salmon {
+  background-color: #f08080;
+  border: 2px black dotted;
+}
+.debug .turchese {
+  background-color: #20b2aa;
+  border: 2px white dotted;
+}
+.debug .column {
+  border: 2px white dotted;
+}
+.debug .fblock2 {
+  background-color: #7fffd4;
+  height: 5rem;
+}
+.debug .button {
+  background-color: #ffb6c1;
+  border: 2px dotted black;
+  height: 2.1875rem;
+}
+
+/*
+------------
+!TYPOGRAPHY
+------------
+*/
+
+/*
+----------
+!PALETTE
+----------
+*/
+
+/*
+---------
+!COMMON
+---------
+*/
+.container {
+  margin: 0 auto;
+  width: 78.125rem;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.block,
+.big-block,
+.fblock1,
+.fblock2,
+nav {
+  display: flex;
+}
+/*
+---------
+!HEADER
+---------
+*/
+/*
+---------
+?HEADER-TOP
+---------
+*/
+header {
+  border-bottom: 4px solid #add8e6;
+}
+header .header-top {
+  display: flex;
+  align-items: center;
+}
+.header-top .logo,
+.header-top .login {
+  flex-grow: 1;
+}
+.header-top .link {
+  flex-grow: 3;
+}
+/*
+---------
+?HEADER-BOTTOM
+---------
+*/
+header .header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-bottom .pink {
+  width: 59.0625rem;
+}
+
+/*
+-------
+!MAIN
+-------
+*/
+main section {
+  display: flex;
+  align-items: center;
+}
+main .blue {
+  flex-grow: 1.5;
+}
+main .light-pink {
+  flex-grow: 1;
+}
+main .green {
+  width: 100%;
+}
+
+/*
+---------
+!FOOTER 
+---------
+*/
+/*
+---------
+?FOOTER-TOP
+---------
+*/
+footer .footer-top {
+  padding: 0.9375rem 0 2.8125rem 0;
+  border-bottom: 2px solid white;
+}
+.footer-top .salmon {
+  flex-grow: 1;
+}
+.footer-top .turchese {
+  display: flex;
+  flex-grow: calc(7 / 3);
+}
+.footer-top .turchese .column {
+  width: calc(100% / 4);
+}
+/*
+---------
+?FOOTER-BOTTOM
+---------
+*/
+footer .footer-bottom {
+  padding-top: 1.875rem;
+}
+.footer-bottom .fblock2 {
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom .button {
+  width: 4.6875rem;
+}
