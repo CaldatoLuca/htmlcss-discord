@@ -20,28 +20,28 @@
 ?MAIN-DEBUG
 -------
 */
-.debug section {
+/* .debug section {
   height: 39.6875rem;
-}
-.debug .big-section {
+} */
+/* .debug .big-section {
   height: 65rem;
 }
 .debug .grey {
   background-color: #d3d3d3;
-}
-.debug .block {
+} */
+/* .debug .block {
   height: 32.5rem;
 }
-.debug .blue {
+.debug .image {
   background-color: #1e90ff;
 
   border: 2px black dotted;
 }
-.debug .light-pink {
+.debug .text {
   background-color: #ffc0cb;
 
   border: 2px black dotted;
-}
+} */
 .debug .big-block {
   height: 58.75rem;
 }
@@ -118,8 +118,15 @@ a {
   color: white;
   font-size: 1.125rem;
 }
+h1 {
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 3.125rem;
+}
 p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  line-height: 40px;
 }
 .block,
 .big-block,
@@ -127,7 +134,9 @@ p {
 .fblock2,
 nav {
   display: flex;
-  align-items: center;
+}
+.block {
+  align-items: flex-start;
 }
 .button {
   display: flex;
@@ -206,7 +215,6 @@ header .header-bottom {
   text-align: center;
 }
 .header-bottom .jumbo h1 {
-  font-size: 3.75rem;
   margin-bottom: 3.4375rem;
 }
 .header-bottom .jumbo p {
@@ -221,14 +229,21 @@ header .header-bottom {
 -------
 */
 main section {
-  display: flex;
-  align-items: center;
+  padding: 145px 0 145px 0;
 }
-main .blue {
+section.grey {
+  background-color: #d3d3d3;
+}
+main .image {
   flex-grow: 1.5;
 }
-main .light-pink {
+
+main .text {
   flex-grow: 1;
+  padding: 1.5625rem 3.125rem 0 3.125rem;
+}
+main .text h2 {
+  margin-bottom: 3.125rem;
 }
 main .green {
   width: 100%;
