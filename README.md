@@ -2,4 +2,4 @@
 
 _HTML+css_
 
-inserimento di contenuti all interno del layou creato in htmlcss-struttura-discord
+inserimento di contenuti all interno del layout creato in htmlcss-struttura-discord
