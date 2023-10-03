@@ -124,6 +124,9 @@ h1 {
 h2 {
   font-size: 3.125rem;
 }
+h3 {
+  font-size: 2.1875rem;
+}
 p {
   font-size: 20px;
   line-height: 40px;
@@ -157,6 +160,12 @@ nav {
 .black a {
   color: white;
 }
+.blue {
+  background-color: #7289da;
+}
+.blue a {
+  color: white;
+}
 /*
 ---------
 !HEADER
@@ -176,13 +185,19 @@ header .header-top {
   background-color: #255ee9;
   padding-top: 2.1875rem;
 }
+.header-top nav .logo,
+.header-top nav .login,
+.header-top nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-top .logo,
 .header-top .login {
   flex-grow: 1;
 }
 .header-top nav .link {
   flex-grow: 3;
-  text-align: center;
 }
 .header-top nav .link ul {
   list-style-type: none;
@@ -245,13 +260,21 @@ main .text h2 {
   margin-bottom: 3.125rem;
 }
 main .big-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 main .big-text h2 {
   margin-bottom: 3.4375rem;
 }
-.big-text div img {
+.big-text img {
   width: 100%;
+  display: block;
+}
+.big-text h3 {
+  width: 100%;
+  margin-bottom: 4.0625rem;
 }
 /*
 ---------
