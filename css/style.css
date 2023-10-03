@@ -42,13 +42,13 @@
 
   border: 2px black dotted;
 } */
-.debug .big-block {
+/* .debug .big-block {
   height: 58.75rem;
 }
 .debug .green {
   background-color: #228b22;
   border: 2px black dotted;
-}
+} */
 /* 
 -------
 ?FOOTER-DEBUG
@@ -237,7 +237,6 @@ section.grey {
 main .image {
   flex-grow: 1.5;
 }
-
 main .text {
   flex-grow: 1;
   padding: 1.5625rem 3.125rem 0 3.125rem;
@@ -245,10 +244,15 @@ main .text {
 main .text h2 {
   margin-bottom: 3.125rem;
 }
-main .green {
+main .big-text {
+  text-align: center;
+}
+main .big-text h2 {
+  margin-bottom: 3.4375rem;
+}
+.big-text div img {
   width: 100%;
 }
-
 /*
 ---------
 !FOOTER 
