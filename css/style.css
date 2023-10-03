@@ -96,6 +96,25 @@ nav {
 .blue a {
   color: white;
 }
+/* ?stile link e bottoni */
+li a:hover {
+  text-decoration: underline white;
+}
+.button.white:hover {
+  box-shadow: 0rem 0.3125rem 0.5rem #7289da;
+}
+.button.white a:hover {
+  color: #7289da;
+}
+.button.black:hover {
+  box-shadow: 0rem 0.3125rem 0.5rem rgb(35, 39, 42);
+  background-color: rgb(35, 39, 42, 0.9);
+}
+.button.blue:hover {
+  box-shadow: 0rem 0.3125rem 0.5rem #7289da;
+  background-color: rgb(114, 137, 218, 0.8);
+}
+
 /*
 ---------
 !HEADER
@@ -201,10 +220,13 @@ section .big-block .big-text img {
   width: 100%;
   display: block;
 }
-section .big-block .big-text h3 {
+section .big-block .big-text .stelline {
   width: 100%;
   margin-bottom: 4.0625rem;
+  background-image: url(../img/stars.svg);
+  background-position: center;
 }
+
 /*
 ---------
 !FOOTER 
