@@ -16,6 +16,7 @@
 */
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
 }
 ul {
   list-style-type: none;
@@ -25,18 +26,16 @@ a {
   color: white;
   font-size: 1.125rem;
 }
-h1 {
-  font-size: 3.75rem;
-}
+h1,
 h2 {
-  font-size: 3.125rem;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 h3 {
-  font-size: 2.1875rem;
+  font-size: 1.6875rem;
 }
 p {
-  font-size: 20px;
-  line-height: 40px;
+  line-height: 1.6;
 }
 
 /*
@@ -73,10 +72,11 @@ nav {
 /* ?bottoni */
 .button {
   display: flex;
-  padding: 0.9375rem;
+  padding: 0.9375rem 1.25rem;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  font-size: 0.875rem;
 }
 .white {
   background-color: white;
@@ -114,7 +114,15 @@ li a:hover {
   box-shadow: 0rem 0.3125rem 0.5rem #7289da;
   background-color: rgb(114, 137, 218, 0.8);
 }
-
+/* ?ondine */
+.wave {
+  height: 6.25rem;
+  background-image: url(../img/wave.svg);
+  opacity: 0.175;
+}
+.wave.flipp {
+  transform: scaleY(-1);
+}
 /*
 ---------
 !HEADER
@@ -142,12 +150,18 @@ header .header-top {
 .header-top .login {
   flex-grow: 1;
 }
+.header-top nav .logo img {
+  display: block;
+}
 .header-top nav .link {
   flex-grow: 3;
 }
-.header-top nav .link ul li {
-  display: inline;
-  margin: 2.5rem;
+.header-top nav .link ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.header-top nav .link ul {
+  font-size: 0.875rem;
 }
 
 /* ?header bottom */
@@ -157,8 +171,9 @@ header .header-bottom {
   align-items: center;
   background-image: url(../img/jumbo.png);
   background-size: cover;
-  padding-top: 11.5625rem;
-  padding-bottom: 7.5rem;
+  background-position: center;
+  padding: 5rem;
+  text-align: center;
 }
 .header-bottom .jumbo {
   width: 59.0625rem;
@@ -167,12 +182,10 @@ header .header-bottom {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-}
-.header-bottom .jumbo h1 {
-  margin-bottom: 3.4375rem;
+  padding: 3.125rem;
 }
 .header-bottom .jumbo p {
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.875rem;
 }
 .header-bottom .jumbo .white {
   margin-right: 1.25rem;
@@ -185,7 +198,7 @@ header .header-bottom {
 
 /* ?section */
 main section {
-  padding: 145px 0 145px 0;
+  padding: 5rem 3.125rem 5rem 3.125rem;
 }
 section.grey {
   background-color: #d3d3d3;
@@ -200,12 +213,8 @@ section .block .image {
 }
 section .block .text {
   flex-grow: 1;
-  padding: 1.5625rem 3.125rem 0 3.125rem;
+  padding: 2rem 8rem;
 }
-section .block .text h2 {
-  margin-bottom: 3.125rem;
-}
-
 /* ?section grande */
 section .big-block .big-text {
   display: flex;
@@ -219,12 +228,13 @@ section .big-block .big-text h2 {
 section .big-block .big-text img {
   width: 100%;
   display: block;
+  margin-bottom: 2.5rem;
 }
 section .big-block .big-text .stelline {
   width: 100%;
-  margin-bottom: 4.0625rem;
+  margin-bottom: 1.875rem;
   background-image: url(../img/stars.svg);
-  background-position: center;
+  background-position: center bottom;
 }
 
 /*
@@ -249,14 +259,19 @@ footer .footer-top .fblock1 {
   flex-grow: 1;
 }
 .footer-top .fblock1 .utility h3 {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.0625rem;
   color: #7289da;
 }
 .footer-top .fblock1 .utility .language {
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.0625rem;
 }
 .footer-top .fblock1 .utility .language img {
-  height: 1rem;
+  width: 1.5625rem;
+  vertical-align: middle;
+}
+.footer-top .fblock1 .utility .language span {
+  vertical-align: middle;
+  font-size: 0.875rem;
 }
 .footer-top .fblock1 .utility .socials i {
   color: white;
